@@ -21,7 +21,9 @@
 .menu-div{
     background-color: rgb(21, 26, 48);
     display: none;
+    position: absolute;
     z-index: 999;
+    width: 100vw;
 }
 
 .show{

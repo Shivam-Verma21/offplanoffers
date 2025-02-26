@@ -47,13 +47,13 @@ export default function Header() {
             </header>
 
             <div className={`menu-div ${menu ? 'show' : ''}`}>
-                <ul className="flex flex-col gap-3 pl-6 py-6">
-                    <li className="home">HOME</li>
-                    <li className="text-white">ABOUT</li>
-                    <li className="text-white">AMENITIES</li>
-                    <li className="text-white">BROCHURE</li>
-                    <li className="text-white">GALLERY</li>
-                    <li className="text-white">CONTACT</li>
+                <ul className="flex flex-col gap-4 pl-6 py-5">
+                    <li className="home text-sm">HOME</li>
+                    <li className="text-white text-sm">ABOUT</li>
+                    <li className="text-white text-sm">AMENITIES</li>
+                    <li className="text-white text-sm">BROCHURE</li>
+                    <li className="text-white text-sm">GALLERY</li>
+                    <li className="text-white text-sm">CONTACT</li>
                 </ul>
             </div>
         </div>
