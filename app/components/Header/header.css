@@ -1,0 +1,62 @@
+.header{
+    background-color: rgb(19, 23, 38);
+}
+
+.first{
+    height: 1px;
+    margin-bottom: 3px;
+}
+.second{
+    height: 1px;
+    margin-bottom: 3px;
+}
+.third{
+    height: 1px;
+}
+
+.home{
+    color: rgb(185, 154, 131);
+}
+
+.menu-div{
+    background-color: rgb(21, 26, 48);
+    display: none;
+    z-index: 999;
+}
+
+.show{
+    display: block;
+}
+
+@media (max-width:800px){
+    .list-div{
+        display: none;
+        transition: all 0.3s;
+    }
+}
+
+@media (min-width:800px){
+    .menu-div, .span-div{
+        display: none;
+    }
+}
+
+@media (min-width:600px){
+    .header{
+        padding-left: 70px;
+        padding-right: 80px;
+    }
+}
+
+@media (min-width:700px){
+    .menu-div{
+        width: 75vw;
+    }
+}
+
+@media (min-width:1200px){
+    .list-div ul{
+        gap: 35px;
+        margin-right: 80px;
+    }
+}
