@@ -4,11 +4,15 @@ import logo from "../../images/logo.svg"
 import Image from "next/image";
 import "./header.css"
 
+import { Open_Sans } from 'next/font/google'
+
+const open_sans = Open_Sans({ subsets: ['latin'] })
+
 export default function Header() {
     const [menu, setmenu] = useState(false)
 
     return (
-        <>
+        <div className={open_sans.className}>
             <header className="header flex justify-between pt-4 pl-4 pb-4 pr-4">
                 <div className="logo-div ">
                     <a href="/" className="no-underline">
@@ -52,6 +56,6 @@ export default function Header() {
                     <li className="text-white">CONTACT</li>
                 </ul>
             </div>
-        </>
+        </div>
     );
 }
