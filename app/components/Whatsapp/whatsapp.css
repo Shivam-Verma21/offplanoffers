@@ -1,0 +1,19 @@
+.whatsapp-div {
+  position: fixed;
+  right: 12px;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  z-index: 20;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}

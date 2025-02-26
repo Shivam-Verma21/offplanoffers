@@ -1,8 +1,11 @@
+import Footer from "./components/Footer/page";
+import Whatsapp from "./components/Whatsapp/page";
 
 export default function Home() {
   return (
     <>
-      <h1>Home Page</h1>
+      <Footer/>
+      <Whatsapp/>
     </>
   );
 }
