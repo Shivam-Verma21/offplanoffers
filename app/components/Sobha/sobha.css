@@ -1,0 +1,108 @@
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  bottom: 15px;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(153, 125, 102);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.content{
+  top: 35%;
+}
+
+.dot.active {
+  background-color: rgb(179, 139, 99);
+  transform: scale(1.5);
+}
+
+.brochure-btn {
+  background-color: rgb(201, 164, 133);
+  border: 1px solid rgb(201, 164, 133);
+}
+
+.brochure-btn:hover {
+  background-color: transparent;
+  color: rgb(201, 164, 133);
+}
+
+.arrow-btn {
+  border: 1px solid rgb(201, 164, 133);
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  z-index: 11;
+  min-height: 45px;
+  min-width: 45px;
+}
+
+.arrow-btn-left{
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.arrow-btn-right{
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.arrow-btn i {
+  height: 20px;
+  width: 15px;
+}
+
+.arrow-btn:hover i {
+  color: rgb(201, 164, 133);
+}
+
+.swiper-div {
+  position: relative;
+  z-index: 2; 
+}
+
+
+@media (min-width: 700px) {
+  .slide-img {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 600px) {
+  .content h2 {
+    font-size: 35px;
+    margin-top: 22px;
+  }
+  .brochure-btn {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 750px) {
+  .arrow-btn {
+    display: block;
+  }
+  .content p{
+    font-size: 20px;
+  }
+  .brochure-btn {
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content h2{
+    font-size: 60px;
+    margin-top: 40px;
+  }
+}
