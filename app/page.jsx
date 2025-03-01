@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <Header />
       <Sobha />
+      <About />
       <Footer />
       <Whatsapp />
-      <About />
     </>
   );
 }
