@@ -78,6 +78,15 @@
   }
 }
 
+@media (max-width: 700px) {
+  .content{
+    top: 25%;
+  }
+  .slide-img {
+    height: 75vh;
+  }
+}
+
 @media (min-width: 600px) {
   .content h2 {
     font-size: 35px;
