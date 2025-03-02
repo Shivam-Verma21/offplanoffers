@@ -1,5 +1,6 @@
 import About from "./components/About/page";
 import Footer from "./components/Footer/page";
+import Gallery from "./components/Gallery/page";
 import Header from "./components/Header/page";
 import OurServiceArea from "./components/OurServiceArea/page";
 import Sobha from "./components/Sobha/page";
@@ -12,6 +13,7 @@ export default function Home() {
       <Sobha />
       <About />
       <OurServiceArea />
+      <Gallery />
       <Footer />
       <Whatsapp />
     </>
