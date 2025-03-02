@@ -4,6 +4,7 @@ import Contact from "./components/Contact/page";
 import Footer from "./components/Footer/page";
 import Gallery from "./components/Gallery/page";
 import Header from "./components/Header/page";
+import Investors from "./components/Investors/page";
 import NewsLetter from "./components/NewsLetter/page";
 import OurServiceArea from "./components/OurServiceArea/page";
 import PricingTable from "./components/PricingTable/page";
@@ -19,6 +20,7 @@ export default function Home() {
       <OurServiceArea />
       <Gallery />
       <PricingTable />
+      <Investors />
       <NewsLetter />
       <Amenities />
       <Contact />
