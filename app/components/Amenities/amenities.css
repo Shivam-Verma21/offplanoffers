@@ -1,0 +1,141 @@
+.amenities-div {
+  padding: 50px 0 100px;
+}
+
+@media (max-width: 1200px) {
+  .amenities-div {
+    padding: 80px 16px;
+  }
+}
+
+@media (min-width: 576px) {
+  .amenities-div {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .amenities-div {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .amenities-div {
+    max-width: 960px;
+  }
+}
+
+.sectionTitle h2 {
+  color: #333;
+}
+
+.sectionTitle h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background: #c9a485;
+}
+
+.amenities-custom-pagination {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  bottom: -40px !important;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 800px) {
+  .amenities-custom-pagination {
+    display: none;
+  }
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(153, 125, 102);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.dot.active {
+  background-color: rgb(179, 139, 99);
+  transform: scale(1.5);
+  transition: all 0.5 ease;
+}
+
+.dot.active::before {
+  content: "";
+  font-size: 6px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  text-align: center;
+  /* color: white; */
+  background-color: white;
+  border-radius: 100%;
+  transition: all 0.5 ease;
+}
+
+.amenities-arrow-btn {
+  background: hsla(44, 25%, 67%, 0.3);
+  min-width: 50px;
+  min-height: 45px;
+  border-radius: 5px;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.amenities-img-div {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px rgba(0, 0, 5, 0.08);
+}
+
+.amenities-arrow-btn-right {
+  right: 0px;
+}
+
+@media (max-width: 1200px) {
+  .amenities-arrow-btn-right {
+    right: -10px;
+  }
+}
+
+.amenities-gallery-img {
+  border: 1px solid white;
+  border-bottom: none;
+}
+
+.img-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f5f5f5;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateY(100%);
+  text-align: center;
+  border: 1px solid #f5f5f5;
+  opacity: 0;
+  padding: 10px;
+}
+
+.amenities-img-div:hover .img-content {
+  transform: translateY(0);
+  opacity: 1;
+}
