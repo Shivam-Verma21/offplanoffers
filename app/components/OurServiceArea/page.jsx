@@ -94,13 +94,17 @@ export default function OurServiceArea() {
             </div>
 
             <div className="custom-btn flex justify-around mt-10 m-auto">
-                <button className=" text-white bg-black text-xl text-center inline-block font-normal relative overflow-hidden">
-                    DOWNLOAD BROCHURE
-                </button>
+                <div data-aos="zoom-in-right">
+                    <button className=" text-white bg-black text-xl text-center inline-block font-normal relative overflow-hidden">
+                        DOWNLOAD BROCHURE
+                    </button>
+                </div>
 
-                <button className=" text-white bg-black text-xl text-center inline-block font-normal relative overflow-hidden">
-                    REGISTER INTEREST
-                </button>
+                <div data-aos="zoom-in-left">
+                    <button className=" text-white bg-black text-xl text-center inline-block font-normal relative overflow-hidden">
+                        REGISTER INTEREST
+                    </button>
+                </div>
             </div>
         </div>
     )
