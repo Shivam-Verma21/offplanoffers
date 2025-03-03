@@ -1,4 +1,4 @@
-.custom-pagination {
+.sobha-custom-pagination {
   display: flex;
   justify-content: center;
   bottom: 15px;
@@ -8,7 +8,7 @@
   transform: translateX(-50%);
 }
 
-.dot {
+.sobha-dot {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -22,7 +22,7 @@
   top: 35%;
 }
 
-.dot.active {
+.sobha-dot.active {
   background-color: rgb(179, 139, 99);
   transform: scale(1.5);
 }

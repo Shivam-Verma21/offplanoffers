@@ -20,11 +20,11 @@ const playfair_display = Playfair_Display({ subsets: ['latin'] })
 
 function CustomPagination({ totalSlides, currentSlide, goToSlide }) {
     return (
-        <div className="custom-pagination absolute">
+        <div className="sobha-custom-pagination absolute">
             {Array.from({ length: totalSlides }).map((_, index) => (
                 <span
                     key={index}
-                    className={`dot ${index === currentSlide ? 'active' : ''}`}
+                    className={`sobha-dot ${index === currentSlide ? 'active' : ''}`}
                     onClick={() => goToSlide(index)}
                 />
             ))}
